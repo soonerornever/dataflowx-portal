@@ -6,38 +6,63 @@
     <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbwQIPtejqSdqzfEN0uOZdH7y34C23KMmPg8uJEL-f6CvZz7vVG0-WLX2TyR92DRImgc/exec">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: #f0f2f5;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
         }
-        .redirect {
+        .redirect-box {
             text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            max-width: 400px;
         }
         .spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid #e2e8f0;
+            width: 50px;
+            height: 50px;
+            border: 4px solid #e2e8f0;
             border-top-color: #1a3c5e;
             border-radius: 50%;
-            margin: 0 auto 15px;
+            margin: 0 auto 20px;
             animation: spin 0.8s linear infinite;
         }
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-        a {
+        h2 {
             color: #1a3c5e;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            background: #1a3c5e;
+            color: white;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        a:hover {
+            background: #2c5a7a;
         }
     </style>
 </head>
 <body>
-    <div class="redirect">
+    <div class="redirect-box">
         <div class="spinner"></div>
-        <p>DataFlowX Portal'a yönlendiriliyorsunuz...</p>
-        <p><small>Tıklamazsa <a href="https://script.google.com/macros/s/AKfycbwQIPtejqSdqzfEN0uOZdH7y34C23KMmPg8uJEL-f6CvZz7vVG0-WLX2TyR92DRImgc/exec">buraya tıklayın</a></small></p>
+        <h2>📡 DataFlowX Portal</h2>
+        <p>Uygulamaya yönlendiriliyorsunuz...</p>
+        <p><small>Otomatik yönlendirme çalışmazsa butona tıklayın</small></p>
+        <a href="https://script.google.com/macros/s/AKfycbwQIPtejqSdqzfEN0uOZdH7y34C23KMmPg8uJEL-f6CvZz7vVG0-WLX2TyR92DRImgc/exec">🚀 Uygulamaya Git</a>
     </div>
 </body>
 </html>
