@@ -2,33 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>DataFlowX Ürün Takip Sistemi</title>
+    <title>DataFlowX Portal</title>
+    <meta http-equiv="refresh" content="0; url=APPS_SCRIPT_WEB_APP_URL_INIZI_BURAYA_YAZIN">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body, html {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             background: #f0f2f5;
         }
-        iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .loading {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .redirect {
             text-align: center;
-            font-family: Arial;
-            color: #64748b;
         }
-        .loading .spinner {
+        .spinner {
             width: 40px;
             height: 40px;
             border: 3px solid #e2e8f0;
@@ -40,26 +28,17 @@
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+        a {
+            color: #1a3c5e;
+        }
     </style>
 </head>
 <body>
-    <div class="loading" id="loading">
+    <div class="redirect">
         <div class="spinner"></div>
-        <p>DataFlowX Portal yükleniyor...</p>
+        <p>DataFlowX Portal'a yönlendiriliyorsunuz...</p>
+        <p><small>Tıklamazsa <a href="script.google.com/macros/s/AKfycbwQIPtejqSdqzfEN0uOZdH7y34C23KMmPg8uJEL-f6CvZz7vVG0-WLX2TyR92DRImgc/exec">buraya tıklayın</a></small></p>
     </div>
-    
-    <iframe id="appFrame" src="about:blank" onload="hideLoading()"></iframe>
-    
-    <script>
-        // 🔴 BURAYA KENDİ WEB APP URL'NİZİ YAZIN
-        const APP_URL = "https://script.google.com/macros/s/AKfycbwQIPtejqSdqzfEN0uOZdH7y34C23KMmPg8uJEL-f6CvZz7vVG0-WLX2TyR92DRImgc/exec";
-        
-        function hideLoading() {
-            document.getElementById('loading').style.display = 'none';
-        }
-        
-        // Iframe'e uygulamanızı yükle
-        document.getElementById('appFrame').src = APP_URL;
-    </script>
 </body>
 </html>
+       
